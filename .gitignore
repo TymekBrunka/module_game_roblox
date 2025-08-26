@@ -4,3 +4,6 @@
 # Roblox Studio lock files
 /*.rbxlx.lock
 /*.rbxl.lock
+
+/src/client/blink_remotes.luau
+/src/server/blink_remotes.luau
