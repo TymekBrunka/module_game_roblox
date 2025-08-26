@@ -1,0 +1,23 @@
+-- these can be ignored if you are using the studio plugin
+option ClientOutput = "src/client/blink_remotes.luau"
+option ServerOutput = "src/server/blink_remotes.luau"
+ 
+-- event MyFirstEvent {
+--     from: Server,
+--     type: Reliable,
+--     call: SingleSync,
+--     data: string
+-- }
+
+struct WeaponSwingData {
+    Health: DateTimeMillis
+}
+
+scope Weapon {
+    event Swing {
+        From: Client,
+        Type: Reliable,
+        Call: SingleSync,
+        Data: WeaponSwingData
+    }
+}

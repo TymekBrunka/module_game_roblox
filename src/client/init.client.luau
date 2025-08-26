@@ -1,0 +1,1 @@
+local Net = require(script.blink_remotes)
